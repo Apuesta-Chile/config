@@ -172,7 +172,7 @@ class Configurations
     {
         $configurations = config('pam.configurations');
         $configuration = $configurations[Components::SERVICES->value - 1]->data;
-        return $configuration->pwa;
+        return $configuration->pwa->active;
     }
 
     /**
