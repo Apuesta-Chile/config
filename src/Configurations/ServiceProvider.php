@@ -13,6 +13,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
     {
         $this->publishes([
             __DIR__ . '/config/configurations.php' => config_path('configurations.php'),
+            __DIR__ . '/config/pam.php' => config_path('pam.php'),
         ]);
     }
 }
