@@ -1,6 +1,6 @@
 <?php
 
-namespace Pkg\Configurations;
+namespace ApuestaChile\Configurations;
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {

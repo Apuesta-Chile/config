@@ -1,6 +1,6 @@
 <?php
 
-namespace Pkg\Configurations\Entities;
+namespace ApuestaChile\Configurations\Entities;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -9,7 +9,7 @@ use Illuminate\Database\Eloquent\Model;
  *
  * This class allows to interact with pams table
  *
- * @package Pkg\Configurations\Entities
+ * @package ApuestaChile\Configurations\Entities
  * @author  Eborio Linárez
  */
 class PAM extends Model

@@ -1,22 +1,21 @@
 {
-    "name": "pkg/config",
-    "description": "Package to manage PAM configurations",
-    "license": "Proprietary",
-    "keywords": ["package", "manage", "pam", "configurations"],
-    "type": "library",
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "http://52.2.23.43"
-        }
+    "$schema": "https://getcomposer.org/schema.json",
+    "name": "apuesta-chile/config",
+    "type": "project",
+    "description": "Unified responses format for Laravel projects",
+    "keywords": [
+        "laravel",
+        "responses",
+        "unified",
+        "format"
     ],
+    "license": "MIT",
     "require": {
-        "php": "^8.2",
-        "eborio/laravel-gettext": "8.*"
+        "php": "^8.2"
     },
     "autoload": {
         "psr-4": {
-            "Pkg\\Configurations\\": "src/Configurations/"
+            "ApuestaChile\\Configurations\\": "src/Configurations/"
         },
         "files": [
             "src/Configurations/helpers.php"
@@ -26,7 +25,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Pkg\\Configurations\\ServiceProvider"
+                "ApuestaChile\\Configurations\\ServiceProvider"
             ]
         }
     }

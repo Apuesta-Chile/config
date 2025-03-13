@@ -1,13 +1,13 @@
 <?php
 
-namespace Pkg\Configurations\Enums;
+namespace ApuestaChile\Configurations\Enums;
 
 /**
  * Class Components
  *
  * This class allows to define static components
  *
- * @package Pkg\Configurations\Enums
+ * @package ApuestaChile\Configurations\Enums
  * @author  Eborio Linárez
  */
 enum Components: int

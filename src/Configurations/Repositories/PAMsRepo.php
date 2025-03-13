@@ -1,17 +1,17 @@
 <?php
 
-namespace Pkg\Configurations\Repositories;
+namespace ApuestaChile\Configurations\Repositories;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
-use Pkg\Configurations\Entities\PAM;
+use ApuestaChile\Configurations\Entities\PAM;
 
 /**
  * Class PAMsRepo
  *
  * This class allows to interact with PAM entity
  *
- * @package Pkg\Configurations\Repositories
+ * @package ApuestaChile\Configurations\Repositories
  * @author  Eborio Linárez
  */
 class PAMsRepo

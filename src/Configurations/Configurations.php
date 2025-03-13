@@ -1,9 +1,9 @@
 <?php
 
-namespace Pkg\Configurations;
+namespace ApuestaChile\Configurations;
 
-use Pkg\Configurations\Enums\Components;
-use Pkg\Configurations\Repositories\PAMsRepo;
+use ApuestaChile\Configurations\Enums\Components;
+use ApuestaChile\Configurations\Repositories\PAMsRepo;
 
 class Configurations
 {

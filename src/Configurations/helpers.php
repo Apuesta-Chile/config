@@ -1,7 +1,7 @@
 <?php
 
-use Pkg\Configurations\Configurations;
-use Pkg\Configurations\Enums\Components;
+use ApuestaChile\Configurations\Configurations;
+use ApuestaChile\Configurations\Enums\Components;
 
 if (!function_exists('global_asset')) {
 
