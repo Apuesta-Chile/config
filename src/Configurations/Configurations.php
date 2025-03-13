@@ -164,6 +164,18 @@ class Configurations
     }
 
     /**
+     * Get PWA
+     *
+     * @return mixed
+     */
+    public static function getPWA()
+    {
+        $configurations = config('pam.configurations');
+        $configuration = $configurations[Components::SERVICES->value - 1]->data;
+        return $configuration->pwa;
+    }
+
+    /**
      * Set email
      *
      * @param null|int $pam Whitelabel ID
