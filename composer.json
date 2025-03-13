@@ -1,0 +1,33 @@
+{
+    "name": "pkg/config",
+    "description": "Package to manage PAM configurations",
+    "license": "Proprietary",
+    "keywords": ["package", "manage", "pam", "configurations"],
+    "type": "library",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://52.2.23.43"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "eborio/laravel-gettext": "8.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pkg\\Configurations\\": "src/Configurations/"
+        },
+        "files": [
+            "src/Configurations/helpers.php"
+        ]
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Pkg\\Configurations\\ServiceProvider"
+            ]
+        }
+    }
+}
