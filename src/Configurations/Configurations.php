@@ -51,7 +51,7 @@ class Configurations
     public static function getDefaultLanguage(): mixed
     {
         $configurations = config('pam.configurations');
-        $configuration = $configurations[Components::ACCESS->value - 1]->data;
+        $configuration = $configurations[Components::INTERNATIONALIZATION->value - 1]->data;
         return $configuration->default_language;
     }
 
