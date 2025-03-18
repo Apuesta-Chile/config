@@ -176,6 +176,24 @@ class Configurations
     }
 
     /**
+     * Get site URL
+     *
+     * @param int|null $pam
+     * @return string
+     */
+    public function getSiteURL(int $pam = null): string
+     {
+         if (!is_null($pam)) {
+             $pamsRepo = new PAMsRepo();
+             $configurations = $pamsRepo->getConfigurationsByPAM($pam);
+
+         } else {
+             $configurations = config('pam.configurations');
+         }
+         return $configurations[0]->site_url;
+     }
+
+    /**
      * Set email
      *
      * @param null|int $pam Whitelabel ID
