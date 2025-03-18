@@ -181,7 +181,7 @@ class Configurations
      * @param int|null $pam
      * @return string
      */
-    public function getSiteURL(int $pam = null): string
+    public static function getSiteURL(int $pam = null): string
      {
          if (!is_null($pam)) {
              $pamsRepo = new PAMsRepo();
