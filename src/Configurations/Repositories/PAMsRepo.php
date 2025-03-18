@@ -21,9 +21,8 @@ class PAMsRepo
      *
      * @param int $pam PAM ID
      * @param int $component Component ID
-     * @return Builder|null
      */
-    public function getConfigurationByPAMAndComponent(int $pam, int $component): Builder|null
+    public function getConfigurationByPAMAndComponent(int $pam, int $component)
     {
         return PAM::on(config('configurations.replica'))
             ->select('configurations.data')
