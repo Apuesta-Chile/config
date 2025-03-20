@@ -52,7 +52,7 @@ class Configurations
     {
         $configurations = config('pam.configurations');
         $configuration = $configurations[Components::INTERNATIONALIZATION->value - 1]->data;
-        return $configuration->default_language;
+        return $configuration->languages->default;
     }
 
     /**
